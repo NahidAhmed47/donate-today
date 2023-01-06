@@ -12,8 +12,8 @@
     font-weight: 700;
 }
 main section{
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 a{
     text-decoration: none;
@@ -69,11 +69,14 @@ h1{
     width: 136px;
     height: 123px;
     background-color: #FAFAFA;
-    border: none;
+    border: 0;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.selected-div-tk{
+    border: 1px solid #FF5959;
 }
 .div-tk .tk-amount{
     font-size: 30px;
@@ -88,5 +91,131 @@ h1{
 
 /* our donate plan styles */
 .section-title .description{
-    padding: 15px 90px 15px 90px;
+    padding: 15px 90px 40px 90px;
+}
+.donate-plan-container{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-div{
+    width: 300px;
+    height: 280px;
+    border: 0;
+    border-radius: 5px;
+}
+.sub-div:first-of-type{
+    background: rgba(79, 157, 166, 0.1);
+}
+.sub-div{
+    background: #FFEEEE;
+}
+.sub-div:last-of-type{
+    background: #fff4d6;
+}
+.sub-div img{
+    padding: 40px 0 0 40px;
+}
+.sub-div div{
+    width: 200px;
+    height: fit-content;
+    padding: 30px 0 0 40px;
+}
+.sub-div div h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+/* depend section styles */
+.depend{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.depend img, .survive img{
+    width: 400px;
+    height: auto;
+}
+.depend .depend-box{
+    width: 400px;
+    height: fit-content;
+    align-self: center;
+}
+.depend-box h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.depend-box p{
+    font-size: 18px;
+    color: #707070;
+    padding: 15px 0;
+}
+.depend-box .btn-primary{
+    width: 180px;
+}
+
+/* survive section styles */
+.survive{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+/* get my updates section styles */
+.get-my-updates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.get-my-updates .description{
+    padding: 15px 100px 30px 100px;
+}
+.email-box{
+    background-color: #fff4d6;
+    width: 700px;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.email-box input[type="email"], input[type="button"]{
+    height: 35px;
+    border: 0;
+}
+.email-box input[type="email"]{
+    width: 190px;
+    padding-left: 15px;
+    color: #707070;
+    background: #D9D9D9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.email-box input[type="button"]{
+    width: 110px;
+    background-color: #FF5959;
+    color: #ffffff;
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* footer section styles */
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #0B0D17;
+    text-align: center;
+    padding-top: 60px;
+}
+footer h2{
+    color:#FF5959;
+    font-family: 'Sevillana', cursive;
+    font-size: 36px;
+}
+footer p{
+    color:#c2bebe;
+    padding-top: 20px;
 }
