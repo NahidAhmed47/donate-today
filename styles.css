@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+body{
+    max-width: 1420px;
+    margin: 0 auto;
+}
 .btn-primary{
     width: 150px;
     height: 50px;
@@ -222,4 +226,56 @@ footer h2{
 footer p{
     color:#c2bebe;
     padding-top: 20px;
+}
+
+.hide{
+    display: none;
+}
+/* Responsive design */
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 10vw;
+    }
+    .header{
+        height: 60vh;
+    }
+    main section{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .section-tk{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .donate-plan-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .depend{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    .depend img, .survive img{
+        width:90%;
+    }
+    .depend-box{
+        width:calc(400px - 20px);
+    }
+    .survive{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    .email-box{
+        flex-direction: column;
+        gap: 15px;
+        width: 90vw;
+    }
+    .email-box input{
+        border-radius: 5px;
+    }
+    .sub-div{
+        width: 80%;
+    }
 }
